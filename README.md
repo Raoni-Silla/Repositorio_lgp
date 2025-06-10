@@ -1,4 +1,34 @@
-POO-Exercicios-Cpp-ProfessorRicardoEste repositório contém as soluções para a lista de exercícios de Programação Orientada a Objetos (POO) em C++ do Professor Ricardo.Conteúdo do RepositórioAs soluções presentes neste repositório abordam e demonstram os seguintes conceitos de POO:Classes e Objetos: Como criar moldes (classes) e instâncias (objetos) de entidades do mundo real.Atributos e Métodos: Definição de características e comportamentos para as classes.Construtores: Como inicializar objetos no momento de sua criação, incluindo o uso de this.this: O ponteiro para a instância atual do objeto, usado para desambiguação e acesso a membros.Encapsulamento: Proteção de dados privados (private) e acesso controlado através de métodos públicos (public), como Getters e Setters.Herança: Reutilização de código através da criação de hierarquias de classes ("é um tipo de" relação): Polimorfismo: A capacidade de objetos relacionados por herança responderem de diferentes maneiras à mesma chamada de método.Pré-requisitosPara compilar e executar os exercícios, você precisará dos seguintes:Compilador C++: Recomendamos o MinGW (GNU Compiler Collection para Windows), que é o ambiente usado para desenvolver este projeto.Editor de Código (Opcional, mas Recomendado): Visual Studio Code (VS Code), com as extensões C/C++ da Microsoft instaladas para melhor suporte.Configuração do Ambiente e Como RodarEste projeto foi desenvolvido utilizando o VS Code com o compilador MinGW. Siga os passos abaixo para compilar e executar os exercícios:1. Garantir que o MinGW está Configurado no PATH (Windows)Se você já usa MinGW com VS Code, provavelmente já fez isso. Caso contrário:Baixe e Extraia o MinGW: Obtenha o pacote MinGW (ex: mingw-*-*-stdthread.zip de nuwen.net/mingw.html) e extraia-o para um local como C:\MinGW.Adicione ao PATH: Adicione o caminho da pasta bin do MinGW (ex: C:\MinGW\bin) às "Variáveis de Ambiente do Sistema" do Windows, na variável Path.Verifique: Abra um novo Prompt de Comando ou Terminal e digite g++ --version.2. Clonar o Repositório (se você está baixando do GitHub)Se você estiver baixando este projeto do GitHub para sua máquina, use o seguinte comando no seu terminal:git clone https://github.com/Raoni-Silla/Repositorio_lgp.git
-3. Compilar e Executar os ExercíciosAssumindo que cada exercício está em um arquivo .cpp separado (ex: ex1.cpp, ex2.cpp):Para compilar e executar um exercício específico:Abra a pasta do projeto no VS Code (File > Open Folder...).Abra o Terminal Integrado do VS Code (Terminal > New Terminal).Para compilar (exemplo para ex1.cpp):g++ -std=c++14 -Wall ex1.cpp -o ex1_exec
--std=c++14: Especifica o padrão C++ a ser usado (você pode ajustar para c++11, c++17, etc., se souber a versão exata).-Wall: Habilita todos os avisos do compilador, o que é uma boa prática.ex1.cpp: Nome do arquivo fonte C++ do exercício.-o ex1_exec: Nome do arquivo executável que será gerado.Para executar o programa compilado:./ex1_exec
-./: Indica que o executável está no diretório atual.(Se você tiver um único arquivo main.cpp com todos os exercícios, basta substituir ex1.cpp por main.cpp e ex1_exec por main_exec nos comandos acima.)LicençaEste projeto é de código aberto e está licenciado sob a licença MIT.Espero que este README.md seja exatamente o que você precisa! Lembre-se de preencher o nome real do seu repositório e, se os exercícios tiverem nomes diferentes de ex1.cpp, ajuste os comandos de compilação/execução na Seção 3.Boa sorte com a prova de POO! Você está muito bem preparado.
+POO - Exercícios em C++ (Professor Ricardo)
+
+Este repositório contém as soluções para a lista de exercícios de Programação Orientada a Objetos (POO) em C++ do Professor Ricardo.
+
+## Conteúdo do Repositório
+
+- Exercícios resolvidos em C++, organizados em arquivos separados (ex: `ex1.cpp`, `ex2.cpp`, ...).
+- Cada exercício possui comentários explicativos para auxiliar no entendimento do código.
+
+## Como Compilar e Executar os Exercícios
+
+Assumindo que cada exercício está em um arquivo `.cpp` separado:
+
+1. Abra a pasta do projeto no terminal.
+2. Compile o exercício desejado. Por exemplo, para o `ex1.cpp`:
+
+   ```bash
+   g++ ex1.cpp -o ex1_exec -std=c++14 -Wall
+   ```
+
+   - `-std=c++14`: Especifica o padrão C++ a ser usado (você pode ajustar para `c++11`, `c++17`, etc.).
+   - `-Wall`: Habilita todos os avisos do compilador, o que é uma boa prática.
+
+3. Execute o programa compilado:
+
+   ```bash
+   ./ex1_exec
+   ```
+
+
+
+## Licença
+
+Este projeto é apenas para fins educacionais.
