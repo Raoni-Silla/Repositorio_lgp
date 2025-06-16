@@ -8,6 +8,8 @@ void soma (int *ptrA, int *ptrB, int *ptrC, int *ptrSoma){
 }
 void sub (int &numA, int &numB, int &numC, int &resultado){
      resultado = numA - numB - numC;
+     cout << "os resultados da subtração são:" << endl;
+     cout << resultado << endl;
 
 }
 int main (){
@@ -15,10 +17,8 @@ int main (){
     int numB =0;
     int numC =0;
     int resultado = 0;
-    int *ptrA = &numA;
-    int *ptrB = &numB;
-    int *ptrC = &numC;
-    int *ptrSoma = &resultado;
+    int som = 0;
+    
     
 
     cout << "digite o valor do primeiro numero:";
@@ -27,7 +27,7 @@ int main (){
     cin >> numB;
     cout << "digite o valor do terceiro numero:";
     cin >> numC;
-    soma(&numA, &numB, &numC, &resultado); // passsagem por referencia de ponteiro
+    soma(&numA, &numB, &numC, &som); // passsagem por referencia de ponteiro
     sub ( numA, numB, numC, resultado); // passagem por referencia
 
     // a principal diferença das duas é o fato de que uma eu
