@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+struct aluno {
+    string nome;
+    int idade;
+    float n1,n2,n3;
+    float media;
+};
+
+void calcularmedia (struct aluno* aluno1){
+    aluno1->media = (aluno1->n1 + aluno1->n2 + aluno1->n3)/3;
+   
+}
+
+void preencherdados(struct aluno* aluno1){
+    cout << "digite o nome do aluno:";
+    cin >> aluno1->nome;
+    cout << "digite a idade do aluno:";
+    cin >> aluno1->idade;
+    cout << "digite a primeira nota do aluno:";
+    cin >> aluno1->n1;
+    cout << "digite a segunda nota do aluno:";
+    cin >> aluno1->n2;
+    cout << "digite a terceira nota do aluno:";
+    cin >> aluno1->n3;
+   
+}
+
+int main(){
+    struct aluno aluno1;
+    preencherdados(&aluno1);
+     calcularmedia(&aluno1);
+}
